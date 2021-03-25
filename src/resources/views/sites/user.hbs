@@ -1,0 +1,102 @@
+<div class="container-admin">
+        {{> userMenu}}
+        <div class="user-content">
+            {{> userheader}}
+            <div class="user-content-table">
+                <div class="content-table-container">
+                    <h1 class="content-table-container-header">
+                        Danh sách nhà
+                    </h1>
+                    <div class="content-table-container-list">
+                        
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th>STT</th>
+                                <th>Tên nhà</th>
+                                <th>địa chỉ</th>
+                                <th>Giá</th>
+                                <th>ngày đăng</th>
+                                <th colspan="2">ngày đăng</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                {{#each home}}
+                                    <tr>
+                                        <th scope="row">{{index @index 1}}</th>
+                                        <td>{{this.name}}</td>
+                                        <td>{{this.adress.street}}</td>
+                                        <td>{{this.price}}</td>
+                                        <td>{{dateformat this.createdAt}}</td>
+                                        <td>
+                                            <a href="/user/edit-home/{{this._id}}" type="button" class="btn btn-primary">sửa</a>
+                                            <a href="/user/delete-home/{{this._id}}" type="button" class="btn btn-danger" data-idhome="{{this._id}}"  data-toggle="modal" data-target="#exampleModal">xóa</a>
+                                        </td>
+                                    </tr>
+                                {{/each}}
+                              
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="content-table-container-page">
+                        <a href="/user?page={{result.previous.pagePre}}" class="table-container-page"><i class="fas fa-arrow-left"></i></a>
+                        <a href="/user?page=1" class="table-container-page">1</a>
+                        <a href="/user?page=2" class="table-container-page">2</a>
+                        <span style="margin-left: 10px;">...</span>
+                        <a href="/user?page=4" class="table-container-page">4</a>
+                        <a href="/user?page={{result.next.pageNext}}" class="table-container-page"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title alert alert-warning" id="exampleModalLabel">Thông báo!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Bạn có thật sư muốn xóa?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <button id="btn-delete-home" type="button" class="btn btn-danger">Xóa</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <form id="form-delete" method="POST" ></form>
+    <script>
+        const user_search_icon = document.querySelector('.menu-user-content-search i');
+        const user_closed_icon = document.querySelector('.menu-user-content-closed');
+        const user_input_search = document.querySelector('.menu-user-content-search input');
+        user_search_icon.addEventListener('click',(e)=>{
+            user_input_search.style.width = '250px';
+            user_closed_icon.style.display = 'block';
+        });
+        user_closed_icon.addEventListener('click',(e)=>{
+            user_input_search.style.width = '0px';
+            user_closed_icon.style.display = 'none';
+        });
+        document.addEventListener("DOMContentLoaded",()=>{
+            var form = document.querySelector('#form-delete');
+            var btn = document.querySelector('#btn-delete-home');
+            var idhome ;
+            $('#exampleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) 
+            var id = button.data('idhome') 
+            idhome = id;
+            })
+            btn.addEventListener('click',(e)=>{
+                form.action = "/user/delete-home/"+idhome+"?_method=DELETE";
+                form.submit();
+            })
+            
+        });
+    </script>

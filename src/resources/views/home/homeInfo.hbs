@@ -1,0 +1,1245 @@
+<div class="container-fluid">
+        <div class="menu  ">
+            <div class="menutren">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand dropdown-0-0 " href="#">Land</a>
+                    <form class="form-inline " action="/product">
+                        <input class="form-control dropdown-0 drop" type="search" required name="search" placeholder="Hải Châu,Thanh Khê..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success btn-search-home " type="submit">Tìm Kiếm</button>
+                    </form>
+                    <button class="navbar-toggler dro " type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon menu-ic"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse dropdown-0-1" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto menu_left">
+                            <li class="nav-item dropdown-1 color-itme">
+                                <a class="nav-link nav-link_item " href="/product" id="navbarDropdown">
+                                    <span>Mua</span>
+                                </a>
+
+                            </li>
+                            <li class="nav-item dropdown-1">
+                                <a class="nav-link nav-link_item " href="/user/add-home" id="navbarDropdown">
+                                    <span>Bán</span>
+                                </a>
+
+                            </li>
+                            <li class="nav-item dropdown-1 ">
+                                <a class="nav-link nav-link_item " href="/user/add-home" id="navbarDropdown">
+                                    <span>Cho thuê</span>
+                                </a>
+
+                            </li>
+                            <a href="/"><button class="modal-btn-1">Trang chủ</button></a>
+                            <a href="/#content-home-reviews"><button class="modal-btn-0">Liên hệ</button></a>
+                            {{#if user}}
+                                <div class="info-user-page">
+                                    <img src="/upload/{{user.image}}" alt="" width="70px" height="70px">
+                                    <div class="user_info_page-item">
+                                    <ul>
+                                        <li><a href="/user"><i class="fas fa-user"></i>Thông tin</a></li>
+                                        <li><a href="/user"><i class="fas fa-home"></i>Nhà của tôi</a></li>
+                                        <li><a href="/user/add-home"><i class="fas fa-balance-scale-right"></i>Bán nhà</a></li>
+                                        <li><a href="/user/logout"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            {{else}}
+                                <button class="modal-btn"><a style="color:black" href="/user">Đăng ký hoặc đăng nhập</a></button>
+                            {{/if}}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-6 col-sm-12">
+                <div class="overview01">
+                    <a href="/product" class="block01">
+                        <img alt="" class="layer01">
+                        <div class="layer02"></div>
+                        <div class="layer03">VietNam, VN<h1>Đà Nẵng</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="overview02">
+                    <h4>Tổng quan về khu vực</h4>
+                    <div class="grid01">
+                        <i class="fas fa-tag icon01"></i>
+                        <div class="content01">Buy:<br>$200K - $3M</div>
+                        <i class="fas fa-sign icon01"></i>
+                        <div class="content01">Mua tại land<br><a href="tung.html">33 căn nhà</a></div>
+                        <i class="fas fa-money-check-alt icon01"></i>
+                        <div class="content01">Thuê:<br>$1.35K - $3.1K</div>
+                        <i class="fas fa-clipboard icon01"></i>
+                        <div class="content01">Thuê nhà tại Land:<br><a href="tung.html">36 căn nhà</a></div>
+                        <i class="fas fa-car icon01"></i>
+                        <div class="content01">Trung tâm thành phố:<br>31 phút</div>
+                        <i class="fas fa-school icon01"></i>
+                        <div class="content01">17 Trường:<br>Rated 2/10 - 7/10</div>
+                    </div>
+                    <div class="grid02">
+                        <button class="block02">
+                            <div class="form02">
+                                <div class="img02"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61349.64667009188!2d108.17168645260251!3d16.04716590690333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0xfc14e3a044436487!2zxJDDoCBO4bq1bmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1609170788756!5m2!1svi!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                            <div class="content02">Bản đồ</div>
+                        </button>
+                        <button class="block02" data-toggle="modal" data-target="#myModal">
+                            <div class="form02">
+                                <img style="background-image: url(images/photo.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content02">Tất cả hình ảnh</div>
+                        </button>
+                    </div>
+                    <div class="grid03">
+                        <button class="block02 block03" data-toggle="modal" data-target="#myModal">
+                            <div class="form02">
+                                <img style="background-image: url(images/outdoors.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content02">Ngoài trời</div>
+                        </button>
+                        <button class="block02 block03" data-toggle="modal" data-target="#myModal">
+                            <div class="form02">
+                                <img style="background-image: url(images/main-street.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content02">Những con đường</div>
+                        </button>
+                        <button class="block02 block03" data-toggle="modal" data-target="#myModal">
+                            <div class="form02">
+                                <img style="background-image: url(images/side-street.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content02">Loại đường</div>
+                        </button>
+                        <button class="block02 block03" data-toggle="modal" data-target="#myModal">
+                            <div class="form02">
+                                <img style="background-image: url(images/home-styles.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content02">Mẫu nhà</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="w3-bar">
+                            <button class="w3-bar-item w3-button btn-lg" onclick="openPhoto('AllPhotos')">Tất cả hình ảnh</button>
+                            <button class="w3-bar-item w3-button btn-lg"
+                                onclick="openPhoto('Outdoors')">Outdoors</button>
+                            <button class="w3-bar-item w3-button btn-lg" onclick="openPhoto('MainStreets')">Những con đường</button>
+                            <button class="w3-bar-item w3-button btn-lg" onclick="openPhoto('SideStreets')">Loại đường</button>
+                            <button class="w3-bar-item w3-button btn-lg" onclick="openPhoto('HomeStyles')">Mẫu nhà</button>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content">
+                            <div id="AllPhotos" class="w3-container w3-display-container photo">
+                                <div class="row">
+                                    <img style="background-image: url(images/main-street.jpg);" alt=""
+                                        class="col-sm-6 img03">
+                                    <img style="background-image: url(images/photo.jpg);" alt="" class="col-sm-6 img03">
+                                    <img style="background-image: url(images/main-street.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-1.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-2.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-3.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-4.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                </div>
+                            </div>
+                            <div id="Outdoors" class="w3-container w3-display-container photo" style="display:none">
+                                <div class="row">
+                                    <img style="background-image: url(images/outdoors.jpg);" alt=""
+                                        class="col-sm-6 img03">
+                                    <img style="background-image: url(images/photo.jpg);" alt="" class="col-sm-6 img03">
+                                    <img style="background-image: url(images/main-street.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-1.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-2.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-3.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-4.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                </div>
+                            </div>
+                            <div id="MainStreets" class="w3-container w3-display-container photo" style="display:none">
+                                <div class="row">
+                                    <img style="background-image: url(images/main-street.jpg);" alt=""
+                                        class="col-sm-6 img03">
+                                    <img style="background-image: url(images/photo.jpg);" alt="" class="col-sm-6 img03">
+                                    <img style="background-image: url(images/main-street.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-1.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-2.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-3.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-4.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                </div>
+                            </div>
+                            <div id="SideStreets" class="w3-container w3-display-container photo" style="display:none">
+                                <div class="row">
+                                    <img style="background-image: url(images/side-street.jpg);" alt=""
+                                        class="col-sm-6 img03">
+                                    <img style="background-image: url(images/photo.jpg);" alt="" class="col-sm-6 img03">
+                                    <img style="background-image: url(images/main-street.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-1.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-2.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-3.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-4.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                </div>
+                            </div>
+                            <div id="HomeStyles" class="w3-container w3-display-container photo" style="display:none">
+                                <div class="row">
+                                    <img style="background-image: url(images/home-styles.jpg);" alt=""
+                                        class="col-sm-6 img03">
+                                    <img style="background-image: url(images/photo.jpg);" alt="" class="col-sm-6 img03">
+                                    <img style="background-image: url(images/main-street.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-1.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-2.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-3.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                    <img style="background-image: url(images/hyden-park-4.jpg);" alt=""
+                                        class="col-sm-4 img03">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 col-sm-12">
+                <div class="overview03">
+                    <h4>Khám phá khu vực</h4>
+                    <div class="w3-bar">
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openMap('Highlight')">Điểm nổi bật</button>
+                        <button class="w3-bar-item w3-button btn-lg"
+                            onclick="openMap('Restaurants')">Nhà Hàng</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openMap('Groceries')">Cửa hàng tạp hóa</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openMap('Nightlife')">Khu vui chơi</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openMap('Cafes')">Quán cà phê</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openMap('Shopping')">Khu mua sắm</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openMap('Arts and Entertaiment')">Giải  trí</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openMap('Fitness')">Khu thể dục</button>
+                    </div><br>
+                    <div id="Highlight" class="w3-container w3-display-container map">
+                        <div class="img04">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61349.64667009188!2d108.17168645260251!3d16.04716590690333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0xfc14e3a044436487!2zxJDDoCBO4bq1bmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1609169884098!5m2!1svi!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    <div id="Restaurants" class="w3-container w3-display-container map" style="display:none">
+                        <div class="img04"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61349.65192393068!2d108.17168632670881!3d16.047148848296274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zbmjDoCBow6BuZyB04bqhaSDEkcOgIG7hurVuZw!5e0!3m2!1svi!2sus!4v1609171415185!5m2!1svi!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    </div>
+                    <div id="Groceries" class="w3-container w3-display-container map" style="display:none">
+                        <div class="img04"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61349.65367520796!2d108.17168628474427!3d16.047143162097523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zY-G7rWEgaMOgbmcgdOG6oXAgaMOzYSB04bqhaSDEkcOgIG7hurVuZw!5e0!3m2!1svi!2sus!4v1609171459688!5m2!1svi!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    </div>
+                    <div id="Nightlife" class="w3-container w3-display-container map" style="display:none">
+                        <div class="img04"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61349.65542648409!2d108.17168624277973!3d16.04713747590058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1za2h1IHZ1aSBjaMahaSB04bqhaSDEkcOgIG7hurVuZw!5e0!3m2!1svi!2sus!4v1609171496614!5m2!1svi!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    </div>
+                    <div id="Cafes" class="w3-container w3-display-container map" style="display:none">
+                        <div class="img04"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61349.658929032856!2d108.17168615885059!3d16.047126103512074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zcXXDoW4gY8OgIHBow6ogdOG6oWkgxJHDoCBu4bq1bmc!5e0!3m2!1svi!2sus!4v1609171685956!5m2!1svi!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    </div>
+                    <div id="Shopping" class="w3-container w3-display-container map" style="display:none">
+                        <div class="img04"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61349.66068030551!2d108.17168611688598!3d16.04712041732052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zc2nDqnUgdGjhu4sgdOG6oWkgxJHDoCBu4bq1bmc!5e0!3m2!1svi!2sus!4v1609171716454!5m2!1svi!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    </div>
+                    <div id="Arts and Entertaiment" class="w3-container w3-display-container map" style="display:none">
+                        <div class="img04"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61349.648421372636!2d108.17168641063793!3d16.047160220699183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zZ2nhuqNpIHRyw60!5e0!3m2!1svi!2sus!4v1609171766654!5m2!1svi!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    </div>
+                    <div id="Fitness" class="w3-container w3-display-container map" style="display:none">
+                        <div class="img04"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61349.65017265224!2d108.17168636867335!3d16.047154534496833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zY8O0bmcgdmnDqm4gdOG6oWkgxJHDoCBu4bq1bmc!5e0!3m2!1svi!2sus!4v1609171811725!5m2!1svi!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    </div>
+                    <section class="autoplay01 slider01">
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop1.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Thức ăn</div>
+                        </button>
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop2.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Mua sắm</div>
+                        </button>
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop3.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Quán ăn</div>
+                        </button>
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop4.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Nước ún'</div>
+                        </button>
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop5.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Thực phẩm</div>
+                        </button>
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop6.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Tòa nhà</div>
+                        </button>
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop7.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Gà rán</div>
+                        </button>
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop8.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Giải khác</div>
+                        </button>
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop9.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Master McGrath</div>
+                        </button>
+                        <button class="block02 block03">
+                            <div class="form02">
+                                <img style="background-image: url(images/shop10.jpg);" alt="" class="img02">
+                            </div>
+                            <div class="content03">Check in</div>
+                        </button>
+                    </section>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 col-sm-12">
+                <div class="overview04">
+                    <h4>Nhận xét của người dân</h4>
+                    <p>ít nhất 200 người đã đánh giá cho Land.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 89% </div>
+                                <div class="icon03"><i class="fas fa-walking" style="color: rgb(0, 163, 177);"></i>
+                                    Có vỉa hè</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 82% </div>
+                                <div class="icon03"><i class="fab fa-product-hunt"
+                                        style="color: rgb(250, 140, 104);"></i> Bãi đậu xe</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 78% </div>
+                                <div class="icon03"><i class="fas fa-paw" style="color: rgb(195, 214, 0);"></i> Khu vui chơi của thú cưng</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 77% </div>
+                                <div class="icon03"><i class="fas fa-road" style="color: rgb(0, 163, 177);"></i> Đường phố sạch sẽ</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 73% </div>
+                                <div class="icon03"><i class="fas fa-shopping-cart"
+                                        style="color: rgb(250, 140, 104);"></i> Cửa hàng tiện nghi,cá siêu thị lớn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 72% </div>
+                                <div class="icon03"><i class="fas fa-luggage-cart" style="color: rgb(195, 214, 0);"></i>
+                                    An ninh</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 see hiden">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 69% </div>
+                                <div class="icon03"><i class="fas fa-utensils" style="color: rgb(250, 140, 104);"></i>
+                                   Các nhà hàng </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 see hiden">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 68% </div>
+                                <div class="icon03"><i class="fas fa-snowman" style="color: rgb(206, 182, 255);"></i>
+                                    There's holiday spirit</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 see hiden">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 65% </div>
+                                <div class="icon03"><i class="fas fa-moon" style="color: rgb(0, 163, 177);"></i> People
+                                    would walk alone at night</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 see hiden">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 63% </div>
+                                <div class="icon03"><i class="fas fa-child" style="color: rgb(0, 163, 177);"></i> Kids
+                                    play outside</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 see hiden">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 56% </div>
+                                <div class="icon03"><i class="fas fa-hourglass-half" style="color: rgb(250, 140, 104);"></i> They plan to stay for at least 5 years
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 see hiden">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 56% </div>
+                                <div class="icon03"><i class="fas fa-volume-mute" style="color: rgb(195, 214, 0);"></i>
+                                    It's quiet</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 see hiden">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 53% </div>
+                                <div class="icon03"><i class="fas fa-car" style="color: rgb(0, 163, 177);"></i> Car is
+                                    needed</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 see hiden">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 49% </div>
+                                <div class="icon03"><i class="fas fa-horse" style="color: rgb(0, 163, 177);"></i>
+                                    There's wildlife</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 see hiden">
+                            <div class="form03">
+                                <div class="icon02"><i class="far fa-thumbs-up"></i> 43% </div>
+                                <div class="icon03"><i class="fas fa-laugh" style="color: rgb(250, 140, 104);"></i>
+                                    Neighbors are friendly
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="btn btn-outline-dark button">See All</div>
+                        </div>
+                        <div class="col-12">
+                            <div class="btn btn-outline-dark button hiden">See Less</div>
+                        </div>
+                    </div>
+                    <div class="w3-bar">
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openCity('All')">All</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openCity('Community')">Community</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openCity('DogOwner')">Dog Owner</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openCity('Parents')">Parents</button>
+                        <button class="w3-bar-item w3-button btn-lg" onclick="openCity('Commute')">Commute</button>
+                    </div><br>
+                    <div class="tab-content01">
+                        <div id="All" class="w3-container w3-display-container city">
+                            <section class="autoplay02 slider02">
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione, cum corrupti asperiores unde cumque magnam quos repellat quas
+                                            cupiditate et
+                                            nulla nihil quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione,
+                                            cum corrupti asperiores unde cumque magnam quos repellat quas cupiditate et
+                                            nulla
+                                            nihil
+                                            quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="Community" class="w3-container w3-display-container city" style="display:none">
+                            <section class="autoplay02 slider02">
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione, cum corrupti asperiores unde cumque magnam quos repellat quas
+                                            cupiditate et
+                                            nulla nihil quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione,
+                                            cum corrupti asperiores unde cumque magnam quos repellat quas cupiditate et
+                                            nulla
+                                            nihil
+                                            quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="DogOwner" class="w3-container w3-display-container city" style="display:none">
+                            <section class="autoplay02 slider02">
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione, cum corrupti asperiores unde cumque magnam quos repellat quas
+                                            cupiditate et
+                                            nulla nihil quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione,
+                                            cum corrupti asperiores unde cumque magnam quos repellat quas cupiditate et
+                                            nulla
+                                            nihil
+                                            quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="Parents" class="w3-container w3-display-container city" style="display:none">
+                            <section class="autoplay02 slider02">
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione, cum corrupti asperiores unde cumque magnam quos repellat quas
+                                            cupiditate et
+                                            nulla nihil quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione,
+                                            cum corrupti asperiores unde cumque magnam quos repellat quas cupiditate et
+                                            nulla
+                                            nihil
+                                            quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="Commute" class="w3-container w3-display-container city" style="display:none">
+                            <section class="autoplay02 slider02">
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione, cum corrupti asperiores unde cumque magnam quos repellat quas
+                                            cupiditate et
+                                            nulla nihil quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(0, 173, 187);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis nemo
+                                            quas
+                                            delectus atque dolor dicta, consequatur excepturi, maiores sit,
+                                            necessitatibus nobis
+                                            fugiat tempore tenetur veniam quam ipsum sint quia!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(250, 140, 104);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                            ipsa
+                                            natus eaque deserunt numquam eius obcaecati provident?</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(206, 182, 255);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                            repudiandae
+                                            repellendus porro, nam voluptatum amet nobis doloribus voluptatibus rem
+                                            saepe velit
+                                            ratione quam error doloremque fugiat debitis unde facilis distinctio!</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                                <div class="block05" style="background-color: rgb(116, 6, 49);">
+                                    <div class="grid04">
+                                        <i class="fas fa-user-circle"></i>
+                                        <div class="content04">
+                                            <h6>Trulia User</h6>Resident - 2y ago
+                                        </div>
+                                    </div>
+                                    <div class="content05">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque
+                                            reiciendis
+                                            ratione,
+                                            cum corrupti asperiores unde cumque magnam quos repellat quas cupiditate et
+                                            nulla
+                                            nihil
+                                            quisquam suscipit atque, tempora distinctio.</p>
+                                    </div>
+                                    <i class="far fa-smile icon05"></i>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="tab-content02">
+                        <div class="block05" style="background-color: rgb(250, 140, 104);">
+                            <div class="grid04">
+                                <i class="fas fa-user-circle"></i>
+                                <div class="content04">
+                                    <h6>Trulia User</h6>Resident - 2y ago
+                                </div>
+                            </div>
+                            <div class="content05">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae
+                                    ipsa
+                                    natus eaque deserunt numquam eius obcaecati provident?</p>
+                            </div>
+                            <i class="far fa-smile icon05"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 col-sm-12">
+                <p class="content07">Trulia is a registered Trademark of Zillow, Inc. and MLS listings are provided by
+                    Zillow, Inc., a licensed real estate brokerage. See here for a list of our real estate licenses.</p>
+                <p class="content06">Trulia Corporate <a href="">About Trulia</a> - <a href="">About Zillow Group</a> -
+                    <a href="">Fair Housing Guide</a> - <a href="">Careers</a> - <a href="">Newsroom</a> - <a
+                        href="">Investor Relations</a> - <a href="">Advertising Terms</a> - <a href="">Privacy</a> - <a
+                        href="">Terms of Use</a> - <a href="">Listings Quality Policy</a> - <a href="">Subscription
+                        Terms</a> - <a href="">Help</a> - <a href="">Privacy Portal</a> - <a href="">Cookie
+                        Preference</a></p>
+                <p class="content06">Zillow Group is committed to ensuring digital accessibility for individuals with
+                    disabilities. We are continuously working to improve the accessibility of our web experience for
+                    everyone, and we welcome feedback and accommodation requests. If you wish to report an issue or seek
+                    an accommodation, please <a href="">contact us.</a></p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+
+    <!--phần js-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $('.autoplay01').slick({
+                slidesToShow: 8,
+                slidesToScroll: 6,
+                autoplaySpeed: 2000,
+            });
+        });
+        $(document).on('ready', function () {
+            $('.autoplay02').slick({
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                autoplaySpeed: 2000,
+            });
+        });
+        $(document).on('ready', function () {
+            $('.autoplay03').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".nav-tabs").click(function () {
+                $(this).tab('show');
+            });
+        });
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+        function openMap(mapName) {
+            var i;
+            var x = document.getElementsByClassName("map");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(mapName).style.display = "block";
+        }
+        function openPhoto(photoName) {
+            var i;
+            var x = document.getElementsByClassName("photo");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(photoName).style.display = "block";
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var x = document.getElementsByClassName('button');
+            var y = document.getElementsByClassName('see');
+            x[0].onclick = function () {
+                x[0].classList.add('hiden');
+                for (var i = 0; i < y.length; i++)
+                    y[i].classList.toggle('hiden');
+                x[1].classList.remove('hiden');
+            }
+            x[1].onclick = function () {
+                x[1].classList.add('hiden');
+                for (var i = 0; i < y.length; i++)
+                    y[i].classList.toggle('hiden');
+                x[0].classList.remove('hiden');
+            }
+        }, false)
+    </script>

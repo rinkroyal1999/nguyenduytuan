@@ -1,0 +1,68 @@
+<div class="menu-user-left">
+            <div class="user-left-nav">
+                <div class="user-left-nav-name">
+                  <a href="/user/editUser/{{user._id}}">
+                        <img class="user-left-nav-img" src="/upload/{{user.image}}" style="width: 50px; height: 50px;" />
+                  </a>
+                    <span>{{user.username}}</span>
+                </div>
+                <i class="fas fa-bars icon-navbar"></i> 
+            </div>
+            <div class="user-left-items">
+                    <h4 class="user-left-item-title">
+                        Thông tin User
+                    </h4>
+                    <a href="/user/editUser/{{user._id}}" class="user-left-item">
+                        <i class="fas fa-user-edit left-item-user"></i>
+                        <span>Cập nhật thông tin</span>
+                    </a>
+                    <a href="/user/editpassword/{{user._id}}" class="user-left-item">
+                        <i class="fas fa-key left-item-user"></i>
+                        <span>Thay đổi mật khẩu</span>
+                    </a>
+                    <a href="/user/logout" class="user-left-item">
+                        <i class="fas fa-sign-out-alt left-item-user"></i>
+                        <span>Đăng xuất</span>
+                    </a>
+            </div>
+            <div class="user-left-items">
+                <h4 class="user-left-item-title">
+                    Sản phẩm
+                </h4>
+                <a href="/user" class="user-left-item">
+                    <i class="far fa-list-alt left-item-user"></i>
+                    <span>Danh sách sản phẩm</span>
+                </a>
+                <a href="/user/add-home" class="user-left-item">
+                    <i class="fas fa-file-alt left-item-user"></i>
+                    <span>Thêm mới sản phẩm</span>
+                </a>
+                <a href="/user/statistical" class="user-left-item">
+                    <i class="fas fa-chart-pie left-item-user"></i>
+                    <span>Thống kê </span>
+                </a>
+                <a href="/product" class="user-left-item">
+                    <i class="fas fa-home"></i>
+                    <span>Tìm kiếm nhà </span>
+                </a>
+            </div>
+            {{#if (admin user)}}
+                <div class="user-left-items">
+                <h4 class="user-left-item-title ">
+                    Admin
+                </h4>
+                <a href="user/admin/list-user" class="user-left-item">
+                    <i class="fas fa-users left-item-user"></i>
+                    <span>Quản lý user</span>
+                </a>
+                <a href="/user/admin/add-category" class="user-left-item">
+                    <i class="far fa-list-alt left-item-user"></i>
+                    <span>Quản lý danh mục</span>
+                </a>
+                <a href="/user/statistical" class="user-left-item">
+                    <i class="fas fa-chart-pie left-item-user"></i>
+                    <span>Thống kê </span>
+                </a>
+            </div>
+            {{/if }}
+ </div>

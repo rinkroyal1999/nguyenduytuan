@@ -1,0 +1,29 @@
+<div class="login-container">
+        <div class="login">
+            <form action="/user/login" id="form-login" method="POST">
+                <h3 class="title-login">Đăng Nhập</h3>
+                {{#if err}}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    {{err}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {{/if}}
+                {{#if success}}
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{success}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {{/if}}
+                <input type="Email" class="input-field" name="email" placeholder="Email" required>
+                <input type="password" class="input-field" name="password" placeholder="Password" required>
+                <a href="/user/forgot" class="fogot-password">Tìm mật khẩu?</a>
+                <button type="submit" class="btn-submit">Login</button>
+                <a href="/user/register" class="link-register">Chưa có tài khoản<strong>Đăng ký</strong></a>
+            </form>
+        </div>
+    </div>
+

@@ -1,0 +1,21 @@
+<div class="container-admin">
+        {{> userMenu}}
+        <div class="user-content">
+            {{> userheader}}
+            <div class="user-content-table">
+                <div class="content-table-container">
+                    <h1 class="content-table-container-header">
+                        Thống kê
+                    </h1>
+                     <div class="chartcontent" style="display: flex; justify-content: space-around;">
+                         <div id="chartContainer1" style="height:300px;width:45%;"></div>
+                     <div id="chartContainer2" style="height:300px;width:45%;"></div>
+                     </div>
+                </div>
+            </div>
+        </div>
+</div>
+{{!-- script pusher --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.0.2/pusher.min.js" integrity="sha512-eimbIwTgi6xenk305C+lvVqEeeNu9qnbcSCmlmcdFUPr6m2lNIn9iVJbm4qat/3IV2HR5qW7HviNno+EqbKi9A==" crossorigin="anonymous"></script>
+<script src="/js/chart.js"></script>

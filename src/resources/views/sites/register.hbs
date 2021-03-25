@@ -1,0 +1,23 @@
+
+<div class="login-container">
+        <div class="register">
+            <form action="/user/register" id="form-register " method="POST">
+                <h3 class="title-login">Đăng ký</h3>
+                {{#if err}}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        {{err}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {{/if}}
+                <input type="text" class="input-field" name="username" placeholder="Username" required>
+                <input type="Email" class="input-field" name="email" placeholder="Email" required>
+                <input type="tel" class="input-field" name="phone" placeholder="0854 084 118" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+                <input type="password" class="input-field" name="password" placeholder="Password" required>
+                <input type="password" class="input-field" name="password2" placeholder="Confirm password" required>
+                <button type="submit" class="btn-submit">Đăng ký</button>
+                 <a href="/user" class="fogot-password">Đã có tài khoản</a>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,73 @@
+<div class="container-admin">
+        {{> userMenu}}
+        <div class="user-content">
+            {{> userheader}}
+            <div class="user-content-table">
+                <div class="content-table-container">
+                    <h1 class="content-table-container-header">
+                        Cập nhật nhà
+                    </h1>
+                    <form  method="POST" action="user/edit-home/{{home._id}}?_method=PUT" enctype="multipart/form-data"  > 
+                        <div class="user-addHome">
+                            {{!-- <h2 class="text-center mb-5 mt-2">ADD HOME</h2> --}}
+                            <div class="form-group d-flex ">
+                                <input class="form-control mr-4" type="text" value="{{home.name}}" name="nameHome" placeholder="Home name">
+                                <select name="category" class="form-control" >
+                                    {{#each categories}}
+                                        {{#if home}} 
+                                          <option selected value="{{this._id}}">{{this.name}}</option>
+                                        {{/if}}
+                                        <option value="{{this._id}}">{{this.name}}</option>
+                                    {{/each}}
+                                </select>
+                            </div>
+                            <div class="form-group d-flex ">
+                                <input class="form-control mr-4" type="number" min="1" max="5" name="bedroom" value="{{home.room.bedroom}}" placeholder="Phòng ngủ">
+                                <input class="form-control mr-4" type="number" min="1" max="5" name="livingroom" value="{{home.room.livingroom}}" placeholder="Phòng khách">
+                                <input class="form-control mr-4" type="number" min="1" max="5" name="bathroom" value="{{home.room.bathroom}}" placeholder="Phòng vệ sinh">
+                                <input class="form-control " type="number" min="50" max="500" name="acreage" value="{{home.acreage}}"  placeholder="Diện tích">
+                            </div>
+                            <div class="form-group d-flex ">
+                                <input class="form-control mr-4" type="text" name="adress" placeholder="250 Điện Biên Phủ" value="{{home.adress.street}}" >
+                                <select name="district" class="form-control mr-4">                                   
+                                        <option value="Hải Châu">Hải Châu</option>
+                                        <option value="Thanh Khê">Thanh Khê</option>
+                                        <option value="Sơn Trà">Sơn Trà</option>
+                                        <option value="Cẩm Lệ">Cẩm Lệ</option>
+                                        <option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
+                                        <option value="Liên Chiểu">Liên Chiểu</option>
+                                        <option value="Hòa Vang">Hòa Vang</option>
+                                </select>
+                                <select name="area" class="form-control" >                                   
+                                        <option value="Đà Nẵng">Đà Nẵng</option>
+                                        <option value="Hồ Chí Minh">TP.Hồ Chí Minh</option>
+                                        <option value="Hà Nội">Hà Nội</option>
+                                </select>
+                                
+                            </div>
+                            
+                            <div class="form-group d-flex ">
+                                <input class="form-control mr-4 " style="width: 50%;" type="number" min="10" max="100000000" name="price" placeholder="10000$ " value="{{home.price}}">
+                                <div class="input-group " style="width: 50%; ">
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                                    </div>
+                                    <div class="custom-file">
+                                    <input type="file" class="custom-file-input"  id="inputGroupFile01" name="fileupload" multiple >
+                                    <label class="custom-file-label" for="inputGroupFile01">Chọn file</label>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Mô tả</label>
+                                <textarea class="form-control" rows="5" name="description" id="comment" value="">{{home.description}}</textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit"  class="btn btn-primary m-auto d-block w-25">Cập nhật</button>
+                            </div>     
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</div>
